@@ -19,14 +19,10 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - python
-    - pip
-    # Must build againt MINIMUM supported version:
     - numpy 1.17.4
   run:
-    - python
-    - numpy
-    - numpy >=1.17.4
+    - {{ pin_compatible('numpy') }}
+
 
 test:
   imports:
