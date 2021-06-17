@@ -11,20 +11,22 @@ source:
   sha256: b070edda67b9e9c17d361627a0fab983f1c91e9024e2d2b75180aa07a2745edb
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - {{ compiler('c') }}
+    # Must build againt MINIMUM supported version:
+    - numpy 1.16.4
   host:
     - python
     - pip
-    - numpy >=1.17.4
   run:
     - python
-    - numpy >=1.17.4
+    # This expands to something like "numpy >=1.16.4,<2.0.a0"
+    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
