@@ -19,9 +19,11 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
+    - python
     - numpy 1.17.4
   run:
-    - {{ pin_compatible('numpy') }}
+    - python
+    - numpy
 
 
 test:
