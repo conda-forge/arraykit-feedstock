@@ -18,11 +18,11 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
-    # Must build againt MINIMUM supported version:
-    - numpy 1.17.4
   host:
     - python
     - pip
+    # Must build againt MINIMUM supported version:
+    - numpy 1.17.4
   run:
     - python
     # This expands to something like "numpy >=1.17.4,<2.0.a0"
