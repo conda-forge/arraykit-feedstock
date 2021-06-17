@@ -25,6 +25,7 @@ requirements:
     - numpy 1.17.4
   run:
     - python
+    - numpy
     - numpy >=1.17.4
 
 test:
