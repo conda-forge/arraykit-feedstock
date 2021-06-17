@@ -19,12 +19,12 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - python >= 3.6
+    - python
     - pip
-    - numpy >= 1.17.4
+    - numpy >=1.17.4
   run:
-    - python >= 3.6
-    - numpy >= 1.17.4
+    - python
+    - numpy >=1.17.4
 
 test:
   imports:
