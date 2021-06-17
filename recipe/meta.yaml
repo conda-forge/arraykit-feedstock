@@ -25,8 +25,7 @@ requirements:
     - numpy 1.17.4
   run:
     - python
-    # This expands to something like "numpy >=1.17.4,<2.0.a0"
-    - {{ pin_compatible('numpy') }}
+    - numpy >=1.17.4
 
 test:
   imports:
