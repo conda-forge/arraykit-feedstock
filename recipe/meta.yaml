@@ -20,11 +20,11 @@ requirements:
     - {{ compiler('c') }}
   host:
     - python
+    - pip
     - numpy
   run:
     - python
     - numpy >=1.17.4
-
 
 test:
   imports:
