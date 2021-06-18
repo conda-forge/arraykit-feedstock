@@ -11,7 +11,7 @@ source:
   sha256: b070edda67b9e9c17d361627a0fab983f1c91e9024e2d2b75180aa07a2745edb
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,7 +21,7 @@ requirements:
   host:
     - python
     - pip
-    - numpy >=1.17.4
+    - numpy
   run:
     - python
     - numpy >=1.17.4
