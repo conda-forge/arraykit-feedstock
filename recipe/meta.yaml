@@ -1,5 +1,5 @@
 {% set name = "arraykit" %}
-{% set version = "0.1.11" %}
+{% set version = "0.1.12" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/arraykit-{{ version }}.tar.gz
-  sha256: d68630940b4850dbbd5f0ffedea44dc52671c536cfba06dc4395ee8c2620d11a
+  sha256: d1fdae316d07d7c26acebdbda767a4c515f8f07aecf381bd43654e115bf6a2cf
 
 build:
   number: 0
