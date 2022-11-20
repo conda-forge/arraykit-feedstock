@@ -239,7 +239,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@brandtbucher](https://github.com/brandtbucher/)
 * [@chaburkland](https://github.com/chaburkland/)
 * [@flexatone](https://github.com/flexatone/)
 
