@@ -1,5 +1,5 @@
 {% set name = "arraykit" %}
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 
 
 package:
@@ -24,7 +24,7 @@ requirements:
     - numpy
   run:
     - python
-    - numpy >=1.17.4
+    - numpy >=1.18.5
 
 test:
   imports:
@@ -35,7 +35,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/InvestmentSystems/arraykit
+  home: https://github.com/static-frame/arraykit
   summary: Array utilities for StaticFrame
   license: MIT
   license_file: LICENSE.txt
