@@ -1,5 +1,5 @@
 {% set name = "arraykit" %}
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/arraykit-{{ version }}.tar.gz
-  sha256: c3312cf42a213c4d3b60430d53a89346cac0c65dc70f1b932589bb74367b3a0a
+  sha256: d8f8ac6d07a5a81c686285694fd0070d221b766ac9ea8097ebdf86d710c63429
 
 build:
   number: 0
@@ -21,10 +21,14 @@ requirements:
   host:
     - python
     - pip
-    - numpy
+    - numpy ==1.18.5  # [py==37]
+    - numpy ==1.18.5  # [py==38]
+    - numpy >=1.18.5  # [py>=39]
   run:
     - python
-    - numpy >=1.17.4
+    - numpy ==1.18.5  # [py==37]
+    - numpy ==1.18.5  # [py==38]
+    - numpy >=1.18.5  # [py>=39]
 
 test:
   imports:
@@ -35,7 +39,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/InvestmentSystems/arraykit
+  home: https://github.com/static-frame/arraykit
   summary: Array utilities for StaticFrame
   license: MIT
   license_file: LICENSE.txt
