@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/arraykit-{{ version }}.tar.gz
-  sha256: c3312cf42a213c4d3b60430d53a89346cac0c65dc70f1b932589bb74367b3a0a
+  sha256: d8f8ac6d07a5a81c686285694fd0070d221b766ac9ea8097ebdf86d710c63429
 
 build:
   number: 0
