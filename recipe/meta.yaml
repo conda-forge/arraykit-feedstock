@@ -21,10 +21,14 @@ requirements:
   host:
     - python
     - pip
-    - numpy
+    - numpy ==1.18.5  # [py==37]
+    - numpy ==1.18.5  # [py==38]
+    - numpy >=1.18.5  # [py>=39]
   run:
     - python
-    - numpy >=1.18.5
+    - numpy ==1.18.5  # [py==37]
+    - numpy ==1.18.5  # [py==38]
+    - numpy >=1.18.5  # [py>=39]
 
 test:
   imports:
