@@ -11,7 +11,7 @@ source:
   sha256: 2b4d65ebd51a4329d67ddc3dba3f7a17473dba09f2a96754aaeb5f8926700921
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,14 +21,10 @@ requirements:
   host:
     - python
     - pip
-    - numpy ==1.18.5  # [py==37]
-    - numpy ==1.18.5  # [py==38]
-    - numpy >=1.18.5  # [py>=39]
+    - numpy >=1.18.5
   run:
     - python
-    - numpy ==1.18.5  # [py==37]
-    - numpy ==1.18.5  # [py==38]
-    - numpy >=1.18.5  # [py>=39]
+    - numpy >=1.18.5
 
 test:
   imports:
