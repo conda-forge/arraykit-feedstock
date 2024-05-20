@@ -11,13 +11,14 @@ source:
   sha256: 86b148c8d8d514771106fd070c2b7ff8f9f4ad2a6a3c4751e4acb876a1e6f73a
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
