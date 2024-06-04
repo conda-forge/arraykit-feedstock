@@ -12,18 +12,19 @@ source:
 
 build:
   number: 0
-  skip: true  # [py<37]
+  skip: true  # [py<39]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
-    skip: True  # [py<=38]
+    - {{ compiler('c') }}
+    - {{ stdlib("c") }}  
   host:
-    - python 
+    - python
     - pip
     - numpy >=1.19.5
   run:
-    - python 
+    - python
     - numpy >=1.19.5
 
 test:
