@@ -20,11 +20,11 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
   host:
-    - python >= 3.9
+    - python >=3.9
     - pip
     - numpy >=1.19.5
   run:
-    - python >= 3.9
+    - python >=3.9
     - numpy >=1.19.5
 
 test:
