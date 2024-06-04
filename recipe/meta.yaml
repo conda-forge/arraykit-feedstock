@@ -17,9 +17,9 @@ build:
 
 requirements:
   build:
-    skip: True  # [py==39]
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
+    skip: True  # [py<=38]
   host:
     - python 
     - pip
