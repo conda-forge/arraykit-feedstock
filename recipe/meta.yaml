@@ -22,10 +22,10 @@ requirements:
   host:
     - python
     - pip
-    - numpy >=1.19.5, <2.0.0
+    - numpy
   run:
     - python
-    - numpy >=1.19.5, <2.0.0
+    - numpy
 
 test:
   imports:
