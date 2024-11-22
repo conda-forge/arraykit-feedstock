@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/arraykit-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arraykit-{{ version }}.tar.gz
   sha256: ee890b71c6e60505a9a77ad653ecb9c879e0f1a887980359d7fbaf29d33d5446
 
 build:
@@ -20,6 +20,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
   host:
+    - setuptools
     - python
     - pip
     - numpy
