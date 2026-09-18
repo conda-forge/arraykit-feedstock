@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arraykit-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/arraykit-{{ version }}.tar.gz
   sha256: 72fb4a16188186b69a77a9b53b212ec102c0081db5c41108017b9f15b7f84520
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<310]
   script: {{ PYTHON }} -m pip install . -vv
 
