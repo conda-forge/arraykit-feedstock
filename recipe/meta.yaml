@@ -1,5 +1,5 @@
 {% set name = "arraykit" %}
-{% set version = "1.12.0" %}
+{% set version = "1.13.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/arraykit-{{ version }}.tar.gz
-  sha256: 72fb4a16188186b69a77a9b53b212ec102c0081db5c41108017b9f15b7f84520
+  sha256: 6508aa06bfd58605ebcdad16567bbada3f7e55fab0f489489a56d1fa3a556d8f
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<310]
   script: {{ PYTHON }} -m pip install . -vv
 
